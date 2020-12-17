@@ -23,7 +23,7 @@ ul.buttons {
     margin: 0; /* Обнуляем значение отступов */
     padding: 4px; /* Значение полей */
 	margin: auto; /* Выравниваем таблицу по центру окна  */
-	width: 600px; /* Ширина слоя кнопок */
+	width: 1200px; /* Ширина слоя кнопок */
    }
 ul.buttons li {
     //border: 1px solid #000; /* Рамка вокруг текста */
@@ -36,8 +36,8 @@ ul.buttons li {
     color: #442C2E;
     background-color: #FEDBD0;
     display:inline-block;
-	width: 200px;
-    height: 200px;
+	width: 180px;
+    height: 180px;
 	border-radius: 50%;
 	
 	 box-shadow: 0 3px 20px rgba(0,0,0,.25),
