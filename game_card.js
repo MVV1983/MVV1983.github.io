@@ -26,7 +26,7 @@ for (let i = 0; i < 12; i++) {
 			var bug = Math.round(Math.random()*4);
 		
 			let imageForCard = image[bug].substring(5,image[bug].length-2);
-			alert(image[bug].substring(5,image[bug].length-2));
+			//alert(image[bug].substring(5,image[bug].length-2));
 			img.src = imageForCard;
 		}
 		//img.src = 'images/yellow_bug.jpg';
@@ -93,7 +93,7 @@ function matchesTwoCards(temp1,temp2,one,two){
   
 	if(card1Atr == card2Atr){//if(temp1 == temp2){
 		
-		  alert('первая карточка:'+one+'совпадает с Второй карточкой:'+two);
+		  alert('первая карточка: '+one+'совпадает с Второй карточкой: '+two);
 		  countScore++;
 		  drawScore.innerHTML="SCORE: "+countScore;
 		  //let paragraph = document.querySelector('p');
@@ -107,7 +107,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 		  alert('Карточки не совпадают');
 		  
 	
-			 alert(one + two);
+			 //alert(one + two);
 			 one.classList.toggle('flip');
 			 two.classList.toggle('flip');
 	  }
