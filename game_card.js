@@ -59,17 +59,19 @@ function flipCard() {
   
   clickCount++;
 
-
-	  if(clickCount == 1){
+if(clickCount == 1){
 	   card1= this;
 	   firstCard = this.querySelector('.front-face');
 	   card1.setAttribute('data',firstCard.src);
 	   isFlipped=true;
 	   firstCard.alt = isFlipped;
-	   temp1 = firstCard.alt;
-		  
+	   temp1 = firstCard.alt;  
       }
-      else if(clickCount == 2){
+else if(this == card1){
+   alert('Эта карточка уже выбрана, выберите другую!');
+   this.removeEventListener('click', flipCard);
+}
+      else {//else if(clickCount == 2)
 
 	   card2= this;
 	   secondCard = this.querySelector('.front-face');
@@ -108,7 +110,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 	  else{
 		  clickCount=0;
 		  alert('Карточки не совпадают');
-		  
+		  one.addEventListener('click', flipCard);
 	
 			 alert(one + two);
 			 one.classList.toggle('flip');
