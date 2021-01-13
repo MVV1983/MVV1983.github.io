@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  //display: flex;
+  background: #060AB2;
+}
+.Score{
+ width: 1024px;/*фиксируем ширину обертки*/
+//margin: 0 auto;/*центрируем ее*/
+ background: dodgerblue;
+ height: 90px;/*Задаем высоту обертки*/
+ display: flex;
+}
+a{
+	color: white;
+	font-size: 300%;
+	display: inline-block;
+}
+
+
+.game_field {
+
+  width: 1024px;
+  height: 1024px;
+  margin: auto;
+  display: inline-block; /* Отображать как строчный элемент */
+  //display: flex;
+  //flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.game_row{
+  display: inline-block;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  perspective: 1000px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+}
+.front-face {
+  transform: rotateY(180deg);
+}
+.game_row:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+.game_row.flip {
+  transform: rotateY(180deg);
+}
+footer{
+  width: 1024px;
+  height: 90px;
+  background: dodgerblue;
+}
