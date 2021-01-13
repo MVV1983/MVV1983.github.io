@@ -65,10 +65,10 @@ function flipCard() {
 	   
 	   firstCard = this.querySelector('.front-face');
 	   card1.setAttribute('data',firstCard.src);
-	   firstCard.alt= "1";
-	   temp1 = firstCard.alt;
 		  isFlipped=true;
-		  firstCard.setAttribute('disable',isFlipped);
+	   firstCard.alt = isFlipped;
+	   temp1 = firstCard.alt;
+		  
 		
 		  
       }
