@@ -65,12 +65,12 @@ function flipCard() {
 	   
 	   firstCard = this.querySelector('.front-face');
 	   card1.setAttribute('data',firstCard.src);
-	   card1.setAttribute('value', 'text');
-	   firstCard.alt = "1";
+	   isFlipped=true;
+	   firstCard.alt = isFlipped;
 	   temp1 = firstCard.alt;
-		  
-		
-		  
+		  if(temp1){
+			  card1.removeEventListener('click', flipCard);
+		     }
       }
       else if(clickCount == 2){
 	   card2= this;
