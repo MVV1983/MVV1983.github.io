@@ -67,7 +67,7 @@ function flipCard() {
 	   card1.setAttribute('data',firstCard.src);
 	   firstCard.alt= "1";
 	   temp1 = firstCard.alt;
-		 if(card1.getAttribute('data')!=null){
+		 if(card1.className=='flip'){
 			 alert('card active');
 			card1.removeEventListener('click', flipCard);
 		    }
