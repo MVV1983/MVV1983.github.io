@@ -65,8 +65,8 @@ function flipCard() {
 	   
 	   firstCard = this.querySelector('.front-face');
 	   card1.setAttribute('data',firstCard.src);
-		  isFlipped=true;
-	   firstCard.alt = isFlipped;
+	   card1.setAttribute('value', 'text');
+	   firstCard.alt = "1";
 	   temp1 = firstCard.alt;
 		  
 		
