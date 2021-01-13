@@ -68,9 +68,7 @@ function flipCard() {
 	   firstCard.alt= "1";
 	   temp1 = firstCard.alt;
 		  isFlipped=true;
-		  if(isFlipped){
-			  firstCard.removeEventListener('click', flipCard);
-		     }
+		  firstCard.setAttribute('disable',isFlipped);
 		
 		  
       }
