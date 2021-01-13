@@ -71,6 +71,10 @@ function flipCard() {
 			 alert('card active');
 			card1.removeEventListener('click', flipCard);
 		    }
+		  else{
+			   alert('card not active');
+			  card1.addEventListener('click', flipCard);
+		  }
 		  
       }
       else if(clickCount == 2){
