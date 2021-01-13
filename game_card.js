@@ -110,7 +110,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 		alert('Карточки не совпадают!');
 		one.addEventListener('click', flipCard);
 	
-		alert(one + two);
+		//alert(one + two);
 		one.classList.toggle('flip');
 		two.classList.toggle('flip');
 	  }
