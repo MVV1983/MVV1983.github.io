@@ -98,22 +98,20 @@ function matchesTwoCards(temp1,temp2,one,two){
   
 	if(card1Atr == card2Atr){//if(temp1 == temp2){
 		
-		  alert('первая карточка:'+one+'совпадает с Второй карточкой:'+two);
+		  //alert('первая карточка:'+one+'совпадает с Второй карточкой:'+two);
 		  countScore++;
 		  drawScore.innerHTML="SCORE: "+countScore;
-		  //let paragraph = document.querySelector('p');
-          //paragraph.textContent = countScore;
 		  clickCount=0;
 		  one.removeEventListener('click', flipCard);
 		  two.removeEventListener('click', flipCard);
 	  }
 	  else{
-		  clickCount=0;
-		  alert('Карточки не совпадают');
-		  one.addEventListener('click', flipCard);
+		clickCount=0;
+		alert('Карточки не совпадают!');
+		one.addEventListener('click', flipCard);
 	
-			 alert(one + two);
-			 one.classList.toggle('flip');
-			 two.classList.toggle('flip');
+		alert(one + two);
+		one.classList.toggle('flip');
+		two.classList.toggle('flip');
 	  }
 }
