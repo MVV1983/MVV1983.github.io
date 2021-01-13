@@ -62,7 +62,6 @@ function flipCard() {
 
 	  if(clickCount == 1){
 	   card1= this;
-	   
 	   firstCard = this.querySelector('.front-face');
 	   card1.setAttribute('data',firstCard.src);
 	   isFlipped=true;
@@ -71,9 +70,7 @@ function flipCard() {
 		  
       }
       else if(clickCount == 2){
-	      if(temp1){
-			  card1.removeEventListener('click', flipCard);
-		     }
+
 	   card2= this;
 	   secondCard = this.querySelector('.front-face');
 	   card2.setAttribute('data',secondCard.src);
