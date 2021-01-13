@@ -48,7 +48,7 @@ var temp2;
 
 var card1;
 var card2;
-var isFliped = false;
+
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
@@ -67,10 +67,11 @@ function flipCard() {
 	   card1.setAttribute('data',firstCard.src);
 	   firstCard.alt= "1";
 	   temp1 = firstCard.alt;
-		  isFlipped = true;
-		  if(isFlipped){
-			  card1.removeEventListener('click', flipCard);
-		     }
+		 if(card1.getAttribute('data')!=null){
+			 alert('card active');
+			card1.removeEventListener('click', flipCard);
+		    }
+		  
       }
       else if(clickCount == 2){
 	   card2= this;
