@@ -68,11 +68,12 @@ function flipCard() {
 	   isFlipped=true;
 	   firstCard.alt = isFlipped;
 	   temp1 = firstCard.alt;
-		  if(temp1){
-			  card1.removeEventListener('click', flipCard);
-		     }
+		  
       }
       else if(clickCount == 2){
+	      if(temp1){
+			  card1.removeEventListener('click', flipCard);
+		     }
 	   card2= this;
 	   secondCard = this.querySelector('.front-face');
 	   card2.setAttribute('data',secondCard.src);
