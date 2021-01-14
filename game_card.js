@@ -102,6 +102,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 		  clickCount=0;
 		  one.removeEventListener('click', flipCard);
 		  two.removeEventListener('click', flipCard);
+		  lockCard=false;
 	  }
 	  else{
 		lockCard=false;
