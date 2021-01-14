@@ -110,6 +110,7 @@ table{
   position: absolute;
   border-radius: 10px;
   background: #001F3F;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .front-face {
