@@ -3,7 +3,7 @@ let table = document.querySelector('.game_field');
 var drawScore = document.querySelector('.count');
 drawScore.innerHTML="SCORE: "+0;
 drawScore.style.marginLeft = '400px';
-
+var messageForPlayer = document.querySelector('.Message');
 
 
 
@@ -106,11 +106,9 @@ function matchesTwoCards(temp1,temp2,one,two){
 		  two.removeEventListener('click', flipCard);
 	  }
 	  else{
+		messageForPlayer.innerHTML="Карточки не совпадают!";
 		clickCount=0;
-		alert('Карточки не совпадают!');
 		one.addEventListener('click', flipCard);
-	
-		//alert(one + two);
 		one.classList.toggle('flip');
 		two.classList.toggle('flip');
 	  }
