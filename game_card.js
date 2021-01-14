@@ -23,10 +23,8 @@ for (let i = 0; i < 12; i++) {
 		img2.className = "back-face";
 		//разброс карточек рандомно подве каждого зверька
 		for(let i = 0; i < 2; i++){
-			var bug = Math.round(Math.random()*4);
-		
+			var bug = Math.round(Math.random()*5);
 			let imageForCard = image[bug].substring(5,image[bug].length-2);
-			//alert(image[bug].substring(5,image[bug].length-2));
 			img.src = imageForCard;
 		}
 		//img.src = 'images/yellow_bug.jpg';
