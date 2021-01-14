@@ -6,17 +6,17 @@
 body {
   height: 100vh;
   //display: flex;
-  background: #060AB2;
+  background: #FF851B;
 }
 .Score{
  width: 1024px;/*фиксируем ширину обертки*/
 //margin: 0 auto;/*центрируем ее*/
- background: dodgerblue;
+ background: #001F3F;
  height: 90px;/*Задаем высоту обертки*/
  display: flex;
 }
 a{
-	color: white;
+	color: #FF851B;
 	font-size: 300%;
 	display: inline-block;
 }
@@ -53,7 +53,7 @@ a{
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: #001F3F;
 	-webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -70,6 +70,6 @@ a{
 footer{
   width: 1024px;
   height: 90px;
-  background: dodgerblue;
+  background: #001F3F;
   text-align:center;
 }
