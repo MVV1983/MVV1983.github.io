@@ -46,11 +46,14 @@ var temp2;
 var card1;
 var card2;
 var isFlipped = false;
-
+let lockCard = false;
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function flipCard() {
+	if(lockCard){
+		return;
+	}
   messageForPlayer.innerHTML="";
   this.classList.add('flip');
   
@@ -69,7 +72,7 @@ else if(this == card1){
    this.removeEventListener('click', flipCard);
 }
       else {//else if(clickCount == 2)
-
+	   lockCard=true;
 	   card2= this;
 	   secondCard = this.querySelector('.front-face');
 	   card2.setAttribute('data',secondCard.src);
@@ -101,6 +104,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 		  two.removeEventListener('click', flipCard);
 	  }
 	  else{
+		lockCard=false;
 		messageForPlayer.innerHTML="Карточки не совпадают!";
 		clickCount=0;
 		one.addEventListener('click', flipCard);
