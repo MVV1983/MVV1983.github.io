@@ -79,7 +79,7 @@ table{
 
 
 .game_field {
-
+  cursor:pointer;
   width: 1024px;
   height: 1024px;
   margin: auto;
