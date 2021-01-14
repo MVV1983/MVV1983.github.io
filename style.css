@@ -8,17 +8,73 @@ body {
   //display: flex;
   background: #FF851B;
 }
+button1, button2{
+   width: 400px;
+   height: 200px;
+   display:block;
+   position: relative;
+   border: 1px solid white;
+   margin:0 auto; // отцентрирует блок по центру родительского элемента
+   padding: 20px;
+   border-radius: 20px;
+   color:#FF851B;
+   background: #001F3F;
+   font-size: 300%;
+   text-align:center;
+   padding-top: 70px;
+   margin-bottom: 10px;
+   
+}
+.navigation{
+	width: 1024px;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 5px solid black;
+    padding: 20px;
+	height: 180px;
+}
+.time{
+	width:calc(35% - 10px);
+	background: #001F3F;
+	color:#FF851B;
+	font-size: 100%;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 30px;
+}
 .Score{
- width: 1024px;/*фиксируем ширину обертки*/
-//margin: 0 auto;/*центрируем ее*/
- background: #001F3F;
- height: 90px;/*Задаем высоту обертки*/
- display: flex;
+	width:calc(35% - 10px);
+	background: #001F3F;
+	text-align: center;
+	padding-top: 30px;
 }
 a{
 	color: #FF851B;
 	font-size: 300%;
-	display: inline-block;
+}
+.units{
+	background: #001F3F;
+}
+table{
+	//margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+	//margin: right; /* Выравниваем таблицу по центру окна  */
+	width: 80px; /* Ширина слоя кнопок */
+}
+.unit,.unit1 {
+    border: 1px solid #000; /* Рамка вокруг текста */
+	margin:2px;
+	margin-top:10px;
+    padding: 2px; /* Поля вокруг текста */
+    text-decoration: none;
+	text-align: center;
+    color: #442C2E;
+    background:#FF851B;
+    display:inline-block;
+	width: 60px;
+    height: 100px;
+	border-radius: 20%;
 }
 
 
@@ -52,9 +108,8 @@ a{
   height: 100%;
   padding: 20px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #001F3F;
-	-webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .front-face {
@@ -69,7 +124,11 @@ a{
 }
 footer{
   width: 1024px;
-  height: 90px;
+  height: 80px;
   background: #001F3F;
   text-align:center;
+}
+
+.hide{
+	visibility: hidden;
 }
