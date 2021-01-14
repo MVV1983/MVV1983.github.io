@@ -1,4 +1,4 @@
-var image = new Array("url('images/ladybug.jpg')","url('images/bug2.jpg')","url('images/bug3.jpg')","url('images/yellow_bug.jpg')","url('images/muha.jpg')"); 
+var image = new Array("url('images/ladybug.jpg')","url('images/bug2.jpg')","url('images/bug3.jpg')","url('images/yellow_bug.jpg')","url('images/muha.jpg')","url('images/bluebug.jpg')"); 
 let table = document.querySelector('.game_field');
 var drawScore = document.querySelector('.count');
 drawScore.innerHTML="SCORE: "+0;
@@ -30,7 +30,7 @@ for (let i = 0; i < 12; i++) {
 			img.src = imageForCard;
 		}
 		//img.src = 'images/yellow_bug.jpg';
-		img2.src = 'images/ladybug.jpg';//рубашка карточки - патом заменить
+		img2.src = 'images/backface.jpg';//рубашка карточки - патом заменить
 	}
 	
 	table.appendChild(tr);
@@ -39,7 +39,6 @@ for (let i = 0; i < 12; i++) {
 const cards = document.querySelectorAll('.game_row');
 
 var clickCount = 0;
-var temp;
 var firstCard;
 var secondCard;
 var countScore=0;
@@ -54,7 +53,7 @@ var isFlipped = false;
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function flipCard() {
-	
+  messageForPlayer.innerHTML="";
   this.classList.add('flip');
   
   clickCount++;
@@ -97,8 +96,6 @@ function matchesTwoCards(temp1,temp2,one,two){
   var card2Atr = card2.getAttribute('data');
   
 	if(card1Atr == card2Atr){//if(temp1 == temp2){
-		
-		  //alert('первая карточка:'+one+'совпадает с Второй карточкой:'+two);
 		  countScore++;
 		  drawScore.innerHTML="SCORE: "+countScore;
 		  clickCount=0;
