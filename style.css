@@ -18,6 +18,12 @@
 		width: 970px;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	body {
+		width: 100%;
+	}
+}
 body {
   height: 100vh;
   //display: flex;
