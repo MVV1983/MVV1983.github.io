@@ -139,9 +139,12 @@ function matchesTwoCards(temp1,temp2,one,two){
 	      
 		  
 		  if(countScore == 6){
-			   getTimeWinner();
+			   const timeOver = Date.now();
+                           let INTERVAL = timeOver-startTime;
+                           messageForPlayer.innerHTML="Маладец !!";
+                           document.getElementById("timer").innerHTML = Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
 			   restoreLevel();
-			}
+		  }
 		  //let unit1 = document.querySelector('.unit1');
 		  //let openUnit = temp1.getAttribute('src');
 		  //unit1.style.backgroundImage = "url('images/yellow_bug.jpg')";
@@ -227,10 +230,4 @@ function hideCards(cards){
 	cards.forEach((item)=>{
 	item.classList.toggle('flip');
 })
-}
-function getTimeWinner(){
-  const timeOver = Date.now();
-  let INTERVAL = timeOver-startTime;
-  messageForPlayer.innerHTML="Маладец !!";
-  document.getElementById(timer).innerHTML = Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
 }
