@@ -213,6 +213,7 @@ function restoreLevel(){
 	}
 
 	messageForPlayer.innerHTML="Красава";
+	clearUnitsImg();
 	start();
 }
 
@@ -229,5 +230,11 @@ function showCards(cards){
 function hideCards(cards){
 	cards.forEach((item)=>{
 	item.classList.toggle('flip');
+})
+}
+function clearUnitsImg(){
+	let slots = document.querySelectorAll('.unit');
+	slots.forEach((item)=>{
+	item.setAttribute("style","background-image: none");
 })
 }
