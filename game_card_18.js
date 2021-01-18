@@ -232,5 +232,5 @@ function getTimeWinner(){
   const timeOver = Date.now();
   let INTERVAL = timeOver-startTime;
   messageForPlayer.innerHTML="Маладец !!";
-  document.getElementById("timer").innerHTML = Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
+  document.getElementById(timer).innerHTML = Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
 }
