@@ -53,6 +53,9 @@ while(fillingGrid!=2){
 	
 const cards = document.querySelectorAll('.game_row');
 
+showCards(cards);
+sleep(1000).then(()=>{hideCards(cards);});
+
 var clickCount = 0;
 var firstCard;
 var secondCard;
@@ -200,12 +203,26 @@ function shuffleImage(image){
 
 function restoreLevel(){
 
-		  
 	while(table.firstChild){
 		table.removeChild(table.firstChild);
 	}
-	
-	messageForPlayer.innerHTML="Красава";
 
+	messageForPlayer.innerHTML="Красава";
 	start();
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function showCards(cards){
+	cards.forEach((item)=>{
+	item.classList.add('flip');
+})
+}
+
+function hideCards(cards){
+	cards.forEach((item)=>{
+	item.classList.toggle('flip');
+})
 }
