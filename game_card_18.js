@@ -55,6 +55,7 @@ const cards = document.querySelectorAll('.game_row');
 
 showCards(cards);
 sleep(1000).then(()=>{hideCards(cards);});
+const startTime = Date.now();
 
 var clickCount = 0;
 var firstCard;
@@ -138,6 +139,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 	      
 		  
 		  if(countScore == 6){
+			   getTimeWinner();
 			   restoreLevel();
 			}
 		  //let unit1 = document.querySelector('.unit1');
@@ -225,4 +227,10 @@ function hideCards(cards){
 	cards.forEach((item)=>{
 	item.classList.toggle('flip');
 })
+}
+function getTimeWinner(){
+  const timeOver = Date.now();
+  let INTERVAL = timeOver-startTime;
+  messageForPlayer.innerHTML="Маладец !!";
+  document.getElementById("timer").innerHTML = Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
 }
