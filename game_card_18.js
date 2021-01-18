@@ -36,8 +36,8 @@ function start(){
 
 
 function goGame(){
-	
-
+	let budilnik = document.getElementById("timer");
+budilnik.innerHTML="Время:"+0;
 //let table = document.querySelector('.game_field');
 var drawScore = document.querySelector('.count');
 drawScore.innerHTML="Score: "+0;
@@ -142,8 +142,8 @@ function matchesTwoCards(temp1,temp2,one,two){
 			   const timeOver = Date.now();
                            let INTERVAL = timeOver-startTime;
                            messageForPlayer.innerHTML="Маладец !!";
-                           document.getElementById("timer").innerHTML = Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
-			   restoreLevel();
+                           budilnik.innerHTML ="Время: "+Number.parseFloat(INTERVAL/1000).toFixed(2)+"секунд";
+			   sleep(10000).then(()=>{restoreLevel();});//restoreLevel();
 		  }
 		  //let unit1 = document.querySelector('.unit1');
 		  //let openUnit = temp1.getAttribute('src');
