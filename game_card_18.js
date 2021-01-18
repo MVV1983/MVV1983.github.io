@@ -134,7 +134,7 @@ function matchesTwoCards(temp1,temp2,one,two){
 		  
 	      
 		  
-		  if(countScore == 2){
+		  if(countScore == 6){
 			   restoreLevel();
 			}
 		  //let unit1 = document.querySelector('.unit1');
