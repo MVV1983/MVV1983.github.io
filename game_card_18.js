@@ -212,7 +212,7 @@ function restoreLevel(){
 		table.removeChild(table.firstChild);
 	}
 
-	messageForPlayer.innerHTML="Красава";
+	messageForPlayer.innerHTML="";
 	clearUnitsImg();
 	start();
 }
