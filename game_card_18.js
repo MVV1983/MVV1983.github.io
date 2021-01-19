@@ -129,8 +129,8 @@ function matchesTwoCards(temp1,temp2,one,two){
 		  two.removeEventListener('click', flipCard);
 		  lockCard=false;
 		  //часть кода для открытия новых сверху справа по id slot персонажей//slots
-	       let slot = document.getElementById(countScore);
-		   alert(slot.getAttribute('id'));
+	          let slot = document.getElementById(countScore);
+		   //alert(slot.getAttribute('id'));
 		   let openUnit = temp1.getAttribute('src');
 		   slot.setAttribute("style","background-image: url(\""+openUnit+"\")");
 		  slot.style.backgroundRepeat = "no-repeat";
