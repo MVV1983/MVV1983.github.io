@@ -34,7 +34,22 @@ body {
    src: local("RAVIE"),
    url(/fonts/RAVIE.ttf);
 }
+.game_name{
+   display:block;
+   position: relative;
+   //border: 1px solid white;
+   margin:0 auto; // отцентрирует блок по центру родительского элемента
+   padding: 20px;
+   //border-radius: 20px;
+   color:#FF851B;
+   font-size: 300%;
+   text-align:center;
+   padding-top: 70px;
+   margin-bottom: 10px;
+   font-family: "RAVIE";
+}
 button1, button2{
+   top:200px;
    width: 400px;
    height: 200px;
    display:block;
