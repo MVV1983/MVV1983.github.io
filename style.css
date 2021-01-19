@@ -29,6 +29,11 @@ body {
   //display: flex;
   background: #FF851B;
 }
+@font-fice{
+   font-family: "RAVIE";
+   src: local("RAVIE"),
+   url(/fonts/RAVIE.ttf);
+}
 button1, button2{
    width: 400px;
    height: 200px;
@@ -44,6 +49,7 @@ button1, button2{
    text-align:center;
    padding-top: 70px;
    margin-bottom: 10px;
+	font-family: "RAVIE";
    
 }
 .navigation{
@@ -63,16 +69,18 @@ button1, button2{
 	text-align: left;
 	padding-left: 10px;
 	padding-top: 30px;
+	font-family: "RAVIE";
 }
 .Score{
 	width:calc(35% - 10px);
 	background: #001F3F;
 	text-align: center;
 	padding-top: 30px;
+	font-family: "RAVIE";
 }
 a{
 	color: #FF851B;
-	font-size: 300%;
+	font-size: 200%;
 }
 .units{
 	background: #001F3F;
