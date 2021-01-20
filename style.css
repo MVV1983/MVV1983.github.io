@@ -3,33 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1280px) {
-	body {
-		width: 1200px;
-		border: 5px solid white;
-                border-radius: 30px;
-	}
-}
-@media screen and (max-width: 1140px) {
-	body {
-		width: 1024px;
-	}
-}
-@media screen and (max-width: 992px) {
-	body {
-		width: 970px;
-		border: 5px solid white;
-                border-radius: 30px;
-	}
-}
 
-@media screen and (max-width: 320px) {
-	body {
-		width: 100%;
-		border: 5px solid white;
-                border-radius: 30px;
-	}
-}
 body {
   height: 100vh;
   //display: flex;
