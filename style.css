@@ -24,6 +24,8 @@
 @media screen and (max-width: 320px) {
 	body {
 		width: 100%;
+		border: 5px solid white;
+                border-radius: 30px;
 	}
 }
 body {
