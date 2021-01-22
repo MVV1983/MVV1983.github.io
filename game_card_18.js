@@ -21,11 +21,7 @@ nav.classList.toggle('hide');
 foot.classList.toggle('hide');
 
 var messageForPlayer = document.querySelector('.Message');
-//sounds effects
-let audioFillingCard = new Audio();
-audioFillingCard.src = "sounds/card_filling.mp3";
-let audioScore = new Audio();
-audioScore.src = "sounds/score.mp3";
+
 
 btnStart.onclick = start;
 let isWin = false;
