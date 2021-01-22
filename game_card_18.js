@@ -85,7 +85,7 @@ function flipCard() {
   this.classList.add('flip');
   
   clickCount++;
-	audiFillingCard.play();
+	audioFillingCard.play();
 
 
 	  if(clickCount == 1){
