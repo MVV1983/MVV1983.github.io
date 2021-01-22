@@ -85,7 +85,7 @@ function flipCard() {
   this.classList.add('flip');
   
   clickCount++;
-	audioFillingCard.play();
+	
 
 
 	  if(clickCount == 1){
@@ -125,7 +125,7 @@ function matchesTwoCards(temp1,temp2,one,two){
   var card2Atr = card2.getAttribute('data');
   
 	if(card1Atr == card2Atr){//if(temp1 == temp2){
-		audioScore.play();
+		
 		  countScore++;
 		  drawScore.innerHTML="SCORE: "+countScore;
 		  //let paragraph = document.querySelector('p');
