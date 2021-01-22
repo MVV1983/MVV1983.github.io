@@ -22,9 +22,9 @@ foot.classList.toggle('hide');
 
 var messageForPlayer = document.querySelector('.Message');
 //sounds effects
-const audioFillingCard = new Audio();
+let audioFillingCard = new Audio();
 audioFillingCard.src = "sounds/card_filling.mp3";
-const audioScore = new Audio();
+let audioScore = new Audio();
 audioScore.src = "sounds/score.mp3";
 
 btnStart.onclick = start;
