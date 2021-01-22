@@ -21,6 +21,11 @@ nav.classList.toggle('hide');
 foot.classList.toggle('hide');
 
 var messageForPlayer = document.querySelector('.Message');
+//sounds effects
+const audioFillingCard = new Audio();
+audioFillingCard.src = "sounds/card_filling.mp3";
+const audioScore = new Audio();
+audioScore.src = "sounds/score.mp3";
 
 btnStart.onclick = start;
 let isWin = false;
@@ -80,6 +85,7 @@ function flipCard() {
   this.classList.add('flip');
   
   clickCount++;
+	audiFillingCard.play();
 
 
 	  if(clickCount == 1){
@@ -119,7 +125,7 @@ function matchesTwoCards(temp1,temp2,one,two){
   var card2Atr = card2.getAttribute('data');
   
 	if(card1Atr == card2Atr){//if(temp1 == temp2){
-
+		audioScore.play();
 		  countScore++;
 		  drawScore.innerHTML="SCORE: "+countScore;
 		  //let paragraph = document.querySelector('p');
